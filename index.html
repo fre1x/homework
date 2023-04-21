@@ -1,313 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header id="header">
-      <img src="data:image/jpeg;base64,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" alt="fotball ball" />
-      <nav>
-        <a href="#presets">Presets</a>
-        <a href="#services">Prints</a>
-        <a href="#store">Store</a>
-        <a href="#main">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-    <main>
-      <section id="main">
-        <div class="main-content">
-          <h1>Hi i Artem Mazur and i football playrt</h1>
-          <p>
-            i started play football when i was 3 years. I very love football i play in team 
-            sunrise(восход) and i want to play football in the future if you want to read more about me button down me
-          </p>
-          <button>Read more</button>
-        </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdCs24HeKSkJb-Z43LIfL2Y9EmbDkyxs9KWA&usqp=CAU" alt="football" />
-      </section>
-      <section id="services" class="services">
-        <h2 class="services-header">Services</h2>
-        <p class="services-description">
-          about others sports. i very love others sport but footbal i love better because football is the best cind of sport (for my mind)
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="header">
+    <img
+      src="data:image/jpeg;base64,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"
+      alt="fotball ball" />
+    <nav>
+      <a href="#presets">Presets</a>
+      <a href="#services">Prints</a>
+      <a href="#store">Store</a>
+      <a href="#main">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="main">
+      <div class="main-content">
+        <h1>Hi i Artem Mazur and i football player</h1>
+        <p>
+          i started play football when i was 3 years. I very love football i play in team
+          sunrise(восход) and i want to play football in the future if you want to read more about me button down me
         </p>
-        <div class="services-card-section">
-          <div class="services-card">
-            <div class="services-card-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="24"
-                viewBox="0 0 20 24"
-                fill="none"
-              >
-                <path
-                  d="M12.0299 5.48L13.3697 3.2C13.4509 3.08 13.4509 2.92 13.3697 2.8L11.8675 0.2C11.7863 0.08 11.6645 0 11.5021 0H8.45726C8.29487 0 8.17308 0.08 8.09188 0.2L6.63034 2.8C6.54914 2.92 6.54914 3.08 6.63034 3.2L7.97009 5.48C3.70726 6.4 0.5 10.16 0.5 14.64C0.5 19.8 4.76282 24 10 24C15.2372 24 19.5 19.8 19.5 14.64C19.5 10.16 16.2927 6.4 12.0299 5.48ZM8.74145 0.8H11.2991L12.5577 3L11.2991 5.2H8.74145L7.48291 3L8.74145 0.8ZM10 23.2C5.2094 23.2 1.31197 19.36 1.31197 14.64C1.31197 9.92 5.2094 6.08 10 6.08C14.7906 6.08 18.688 9.92 18.688 14.64C18.688 19.36 14.7906 23.2 10 23.2Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-            <h3 class="services-card-title">Wedding Photography</h3>
-            <div class="services-card-content">
-              Wedding photography is often called the bread and butter of
-              photographers — but that doesn't mean it has to be boring. Quite
-              the opposite!
-            </div>
-            <div class="services-card-link">
-              <span>Read more</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="10"
-                viewBox="0 0 20 10"
-                fill="none"
-              >
-                <path
-                  d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
+        <button>Read more</button>
+      </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQehCKvXwuTjObXgOXUCvz5yHw7BM5rgl_pQ&usqp=CAU"
+        alt="football" />
+    </section>
+    <section id="services" class="services">
+      <h2 class="services-header">Services</h2>
+      <p class="services-description">
+        about others sports. i very love others sport but footbal i love better because football is the best cind of
+        sport (for my mind)
+      </p>
+      <div class="services-card-section">
+        <div class="services-card">
+          <div class="services-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none">
+              <path
+                d="M12.0299 5.48L13.3697 3.2C13.4509 3.08 13.4509 2.92 13.3697 2.8L11.8675 0.2C11.7863 0.08 11.6645 0 11.5021 0H8.45726C8.29487 0 8.17308 0.08 8.09188 0.2L6.63034 2.8C6.54914 2.92 6.54914 3.08 6.63034 3.2L7.97009 5.48C3.70726 6.4 0.5 10.16 0.5 14.64C0.5 19.8 4.76282 24 10 24C15.2372 24 19.5 19.8 19.5 14.64C19.5 10.16 16.2927 6.4 12.0299 5.48ZM8.74145 0.8H11.2991L12.5577 3L11.2991 5.2H8.74145L7.48291 3L8.74145 0.8ZM10 23.2C5.2094 23.2 1.31197 19.36 1.31197 14.64C1.31197 9.92 5.2094 6.08 10 6.08C14.7906 6.08 18.688 9.92 18.688 14.64C18.688 19.36 14.7906 23.2 10 23.2Z"
+                fill="#3A5F56" />
+            </svg>
           </div>
-          <div class="services-card">
-            <div class="services-card-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-
-height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M23.7598 0.981583L23.6399 0.621921C23.5999 0.502033 23.48 0.382145 23.36 0.342183L23.0002 0.222295C22.9202 0.182333 21.2809 -0.257255 18.682 0.222295C17.2026 0.502033 15.7232 1.06151 14.2838 1.86076C13.4842 2.30035 12.7245 2.7799 11.9248 3.37933C11.9248 3.37933 11.9248 3.37933 11.8848 3.37933C10.9252 4.09866 9.92565 4.93787 9.00604 5.85701C5.36757 9.4936 3.16849 13.0902 1.92901 15.448C0.569583 18.0456 0.129768 19.8039 0.0897844 19.8839L0.009818 20.5632C-0.0301652 20.763 0.0498012 20.9628 0.2897 21.0428L2.32884 21.7221L3.00856 23.7602C3.04854 23.8801 3.20847 24 3.36841 24C3.40839 24 3.44837 24 3.48836 24L4.0881 23.8402C4.16807 23.8402 5.92733 23.3606 8.52624 22.0019C10.4055 21.0428 13.0044 19.4842 15.8032 17.0865C16.5629 16.4471 17.3225 15.7278 18.1222 14.9685C19.8015 13.29 21.1609 11.5317 22.1205 9.73338C22.9202 8.29473 23.44 6.77615 23.7598 5.3375C24.2796 2.69997 23.7998 1.06151 23.7598 0.981583ZM9.64577 6.45645C10.4055 5.69716 11.2051 5.0178 11.9648 4.3784L15.0835 16.6069C13.0843 18.3253 11.1651 19.5642 9.5658 20.4833L6.80696 9.61349C7.64661 8.57446 8.56622 7.53544 9.64577 6.45645ZM8.16639 21.2825C5.64745 22.6013 3.96816 23.0409 3.88819 23.0409L3.60831 23.1208L3.00856 21.2825C2.96858 21.1627 2.88861 21.0827 2.76866 21.0428L0.889449 20.4034L0.969415 20.1636C0.969415 20.0837 1.44921 18.4052 2.72868 15.8876C3.48836 14.449 4.60789 12.5308 6.16723 10.4527L8.84611 20.9229C8.60621 21.0428 8.36631 21.1627 8.16639 21.2825ZM23.0002 5.13769C22.7203 6.53638 22.2005 7.93506 21.4408 9.29379C20.5212 11.0122 19.2018 12.7306 17.5624 14.369C16.9627 14.9685 16.3629 15.5279 15.8032 16.0475L12.6845 3.89885C13.3642 3.4193 14.0439 2.97971 14.7236 2.62005C16.1231 1.86076 17.5225 1.34125 18.8819 1.06151C20.6811 0.701846 21.9206 0.861696 22.4804 0.981583L20.7211 2.73993C20.5612 2.89978 20.5612 3.13956 20.7211 3.29941C20.8011 3.37933 20.921 3.4193 21.001 3.4193C21.081 3.4193 21.2009 3.37933 21.2809 3.29941L23.0401 1.54106C23.2001 2.06057 23.32 3.33937 23.0002 5.13769Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-            <h3 class="services-card-title">Sports Photography</h3>
-            <div class="services-card-content">
-              Sports photography is awesome. Sitting on the sidelines with a
-              massive telephoto allows me to get right into the action — I love
-              shooting sports where there's a lot of explosive movement.
-            </div>
-            <div class="services-card-link">
-              <span>Read more</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="10"
-                viewBox="0 0 20 10"
-                fill="none"
-              >
-                <path
-                  d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
+          <h3 class="services-card-title">basketball</h3>
+          <div class="services-card-content">
+            i think this is the 2nd sport i love the most in it you need to know the rules and have good accuracy when
+            throwing the ball
           </div>
-          <div class="services-card">
-            <div class="services-card-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="16"
-                viewBox="0 0 24 16"
-                fill="none"
-              >
-                <path
-
-d="M5.08 7.21182C6.4 7.21182 7.68 7.76355 8.6 8.66995C9.04 9.10345 9.4 9.61576 9.64 10.1675C10.24 9.73399 11 9.45813 11.84 9.45813C12.8 9.45813 13.64 9.7734 14.28 10.3251C15.04 8.47291 16.88 7.21182 18.96 7.21182C20.32 7.21182 21.56 7.72414 22.52 8.66995C23.48 9.61576 24 10.8374 24 12.1773V13.9901C24 15.0936 23.08 16 21.96 16H2.04C0.92 16 0 15.0936 0 13.9901V12.335C0 10.9557 0.56 9.61576 1.56 8.63054C2.52 7.72414 3.76 7.17241 5.08 7.21182ZM11.84 10.2069C10.2 10.2069 8.88 11.5074 8.88 13.1232V15.2118H14.8V13.1232C14.8 11.5468 13.48 10.2069 11.84 10.2069ZM5.12 7.96059H5.08C4 7.96059 2.96 8.39409 2.16 9.18227C1.28 10.0493 0.8 11.1921 0.8 12.335V13.9901C0.8 14.6601 1.36 15.2118 2.04 15.2118V15.1724H8.12V13.0837C8.12 12.1773 8.48 11.3103 9.04 10.6798C8.84 10.1281 8.52 9.61576 8.08 9.18227C7.28 8.39409 6.24 7.96059 5.12 7.96059ZM18.92 8C17.04 8 15.4 9.18227 14.88 10.9557C15.32 11.5468 15.6 12.2956 15.6 13.1232V15.2118H21.96C22.64 15.2118 23.2 14.6601 23.2 13.9901H23.16V12.1773C23.16 11.0739 22.72 10.0099 21.92 9.22167C21.12 8.4335 20.04 8 18.92 8ZM11.88 3.9803C13.04 3.9803 13.96 4.8867 13.96 6.02956C13.96 7.17241 13.04 8.07882 11.88 8.07882C10.72 8.07882 9.8 7.17241 9.8 6.02956C9.8 4.8867 10.72 3.9803 11.88 3.9803ZM11.88 4.80788C11.16 4.80788 10.6 5.35961 10.6 6.06897C10.6 6.77833 11.16 7.33005 11.88 7.33005C12.6 7.33005 13.16 6.77833 13.16 6.06897C13.16 5.35961 12.6 4.80788 11.88 4.80788ZM5.04 0C6.6 0 7.88 1.26108 7.88 2.79803C7.88 4.33498 6.6 5.59606 5.04 5.59606C3.48 5.59606 2.2 4.33498 2.2 2.79803C2.2 1.26108 3.48 0 5.04 0ZM18.96 0C20.52 0 21.8 1.26108 21.8 2.79803C21.8 4.33498 20.52 5.59606 18.96 5.59606C17.4 5.59606 16.12 4.33498 16.12 2.79803C16.12 1.26108 17.4 0 18.96 0ZM5.04 0.788177C3.92 0.788177 3 1.69458 3 2.79803C3 3.90148 3.92 4.80788 5.04 4.80788C6.16 4.80788 7.08 3.90148 7.08 2.79803C7.08 1.69458 6.16 0.788177 5.04 0.788177ZM18.96 0.788177C17.84 0.788177 16.92 1.69458 16.92 2.79803C16.92 3.90148 17.84 4.80788 18.96 4.80788C20.08 4.80788 21 3.90148 21 2.79803C21 1.69458 20.08 0.788177 18.96 0.788177Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-            <h3 class="services-card-title">Portrait Photography</h3>
-            <div class="services-card-content">
-              Who doesn't love portrait photography? I love being able to
-              capture that expression, quirk, smile or whatever, that sort of
-              defines a person.
-            </div>
-            <div class="services-card-link">
-              <span>Read more</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="10"
-                viewBox="0 0 20 10"
-                fill="none"
-              >
-                <path
-                  d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="services-card">
-            <div class="services-card-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="22"
-                viewBox="0 0 24 22"
-                fill="none"
-              >
-                <path
-                ]
-d="M12 0.5C18.08 0.5 23.24 4 24 8.60112V8.79775C24 8.83708 23.96 8.83708 23.96 8.8764C23.92 8.8764 23.92 8.91573 23.92 8.95506C23.92 8.95506 23.92 8.99438 23.88 8.99438C23.84 8.99438 23.84 9.03371 23.8 9.03371C23.76 9.07303 23.76 9.07303 23.72 9.07303H20.96V20.7135H21.76C22 20.7135 22.16 20.8708 22.16 21.1067C22.16 21.3427 22 21.5 21.76 21.5H14.96C14.72 21.5 14.56 21.3427 14.56 21.1067C14.56 20.8708 14.72 20.7135 14.96 20.7135H15.92V9.07303H8.2V20.6742H9.08C9.32 20.6742 9.48 20.8315 9.48 21.0674C9.48 21.3034 9.32 21.4607 9.08 21.4607H2.28C2.04 21.4607 1.88 21.3034 1.88 21.0674C1.88 20.8315 2.04 20.6742 2.28 20.6742H3.16V9.03371H0.2C0.16 9.03371 0.12 8.99438 0.12 8.99438L0.10963 8.98419L0.08 8.95506C0.08 8.91573 0.04 8.91573 0.04 8.8764C0 8.83708 0 8.83708 0 8.79775V8.60112C0.76 4 5.92 0.5 12 0.5ZM7.4 9.07303H4V20.7135H7.4V9.07303ZM20.12 9.07303H16.72V20.7135H20.12V9.07303ZM12 1.28652C6.52 1.28652 1.84 4.27528 0.88 8.28652H23.12C22.16 4.27528 17.48 1.28652 12 1.28652ZM14.32 5.10112C14.56 5.10112 14.72 5.25843 14.72 5.49438C14.72 5.73034 14.56 5.88764 14.32 5.88764H9.72C9.48 5.88764 9.32 5.73034 9.32 5.49438C9.32 5.25843 9.48 5.10112 9.72 5.10112H14.32Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-            <h3 class="services-card-title">Architecture Photography</h3>
-            <div class="services-card-content">
-              The nice thing about shooting architecture (in my opinion) is that
-              it's so easy to do. Seriously, just pick up your camera and get
-              out there.
-            </div>
-            <div class="services-card-link">
-              <span>Read more</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="10"
-                viewBox="0 0 20 10"
-                fill="none"
-              >
-                <path
-                  d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="services-card">
-            <div class="services-card-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-
-d="M11.636 0C12.2359 0 12.7557 0.48 12.7557 1.12V3.4C12.7557 4.12 12.5158 4.84 12.1159 5.44C12.5158 6.04 12.7557 6.76 12.7557 7.48V9.08C12.7557 9.68 12.2758 10.2 11.636 10.2C9.99653 10.2 8.55696 9.08 8.11709 7.52C7.67722 7.68 7.27734 8 6.87746 8.44C6.59754 8.8 6.51757 9.32 6.7575 9.76C6.99742 10.2 7.3973 10.48 7.91715 10.48C8.15708 10.48 8.31703 10.64 8.31703 10.88C8.31703 11.12 8.15708 11.28 7.91715 11.28C7.11739 11.28 6.3976 10.84 6.03771 10.12C5.67782 9.4 5.79778 8.56 6.27764 7.92C6.95744 7.2 7.59724 6.76 8.35702 6.6C8.47698 6.56 8.59694 6.56 8.67692 6.64C8.7569 6.72 8.83687 6.8 8.83687 6.92C9.03681 8.36 10.2365 9.4 11.676 9.4C11.836 9.4 11.9959 9.24 11.9959 9.08V7.48C11.9959 6.84 11.756 6.2 11.3561 5.72C11.2362 5.56 11.2362 5.36 11.3561 5.2C11.756 4.72 11.9959 4.08 11.9959 3.44V1.12C11.9959 0.96 11.836 0.8 11.676 0.8C10.0765 0.8 8.79689 2.12 8.79689 3.68C8.79689 4.04 8.39701 4.08 8.23705 4.08C6.23765 4.24 4.51817 5 3.11858 6.4C1.07919 8.4 0.319422 11.28 1.03921 14C1.75899 16.8 3.87836 18.92 6.63753 19.64C6.7575 19.68 6.87746 19.76 6.91745 19.88C6.95744 20 6.95744 20.12 6.87746 20.24C6.0777 21.4 5.31793 21.96 4.63813 22.48L4.51817 22.6C4.31823 22.72 4.35821 22.88 4.3982 22.96C4.43819 23.04 4.51817 23.2 4.71811 23.2C7.35732 23.2 9.83657 22.04 11.5161 20.04C11.596 19.92 11.716 19.88 11.836 19.88L13.7154 19.92C18.474 19.92 22.5528 16.4 23.1926 11.64C23.1926 11.52 23.1526 11.44 23.1126 11.4C23.0726 11.36 22.9926 11.28 22.8727 11.28H14.2752C14.0353 11.28 13.8754 11.12 13.8754 10.88C13.8754 10.64 14.0353 10.48 14.2752 10.48H22.8727C23.1926 10.48 23.5125 10.64 23.7124 10.88C23.9124 11.16 24.0323 11.48 23.9923 11.76C23.3125 16.88 18.9139 20.72 13.7554 20.72H12.0359C10.1965 22.8 7.55726 24 4.75809 24C4.23825 24 3.83837 23.72 3.67842 23.24C3.51846 22.8 3.67842 22.28 4.0783 22L4.23825 21.88C4.79808 21.44 5.35791 21.04 5.95774 20.28C3.15857 19.32 1.07919 17.12 0.319422 14.24C-0.520327 11.2 0.319422 8.04 2.55875 5.8C4.03831 4.32 5.87776 3.48 7.99712 3.28C8.15708 1.44 9.7566 0 11.636 0ZM19.3537 12.76C19.9136 12.76 20.3934 13.24 20.3934 13.8C20.3934 14.36 19.9136 14.8 19.3537 14.84C18.7939 14.84 18.314 14.36 18.314 13.8C18.314 13.24 18.7939 12.76 19.3537 12.76Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-            <h3 class="services-card-title">Animal Photography</h3>
-            <div class="services-card-content">
-              Whenever I'm travelling I always make sure to pack gear that
-              allows me to capture the local wildlife. The eagle that takes
-              flight in this picture is probably my most prized image.
-            </div>
-            <div class="services-card-link">
-              <span>Read more</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="10"
-                viewBox="0 0 20 10"
-                fill="none"
-              >
-                <path
-                  d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="services-card">
-            <div class="services-card-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="22"
-                viewBox="0 0 24 22"
-                fill="none"
-              >
-                <path
-
-d="M22.5933 8.97851C22.9931 8.97851 23.3529 9.13551 23.6327 9.41028C23.9125 9.68505 24.0325 10.0383 23.9925 10.4308C23.7526 13.0607 22.5533 15.5336 20.6344 17.4178C19.9148 18.1636 19.0753 18.7523 18.1958 19.2626V19.6551C18.1958 20.6757 17.3563 21.5 16.3169 21.5H7.68176C6.64235 21.5 5.80283 20.6757 5.80283 19.6551V19.2626C2.52469 17.4178 0.365918 14.1206 0.00612227 10.4308C-0.033855 10.0776 0.126054 9.68505 0.365918 9.41028C0.645759 9.13551 1.00555 8.97851 1.40533 8.97851H22.5933ZM22.2335 13.7673H1.72515C2.6846 15.8084 4.32367 17.5355 6.40249 18.6738C6.52242 18.7523 6.60238 18.8701 6.60238 19.0271V19.6159C6.60238 20.2047 7.08211 20.6757 7.68176 20.6757H16.3169C16.9165 20.6757 17.3962 20.2047 17.3962 19.6159V19.0271C17.3962 18.8701 17.4762 18.7523 17.5961 18.6738C18.5156 18.2028 19.3551 17.5748 20.0747 16.8682C20.9942 15.9654 21.7138 14.9056 22.2335 13.7673ZM22.6333 9.7243H1.40533C1.24542 9.7243 1.08551 9.8028 0.965578 9.92056C0.845646 10.0383 0.805668 10.1953 0.805668 10.3523C0.885623 11.2551 1.08551 12.1579 1.40533 12.9822H22.5933C22.9131 12.1187 23.113 11.2551 23.2329 10.3523C23.2329 10.1953 23.193 10.0383 23.073 9.92056C22.9531 9.8028 22.7932 9.7243 22.6333 9.7243ZM6.08267 0.5C6.32254 0.5 6.48245 0.657009 6.48245 0.892523V5.56355C6.48245 5.79907 6.32254 5.95607 6.08267 5.95607C5.84281 5.95607 5.6829 5.75981 5.6829 5.56355V0.892523C5.6829 0.657009 5.84281 0.5 6.08267 0.5ZM17.916 0.5C18.1558 0.5 18.3157 0.657009 18.3157 0.892523V5.56355C18.3157 5.79907 18.1558 5.95607 17.916 5.95607C17.7161 5.95607 17.5162 5.75981 17.5162 5.56355V0.892523C17.5162 0.657009 17.6761 0.5 17.916 0.5ZM11.9993 0.5C12.2392 0.5 12.3991 0.657009 12.3991 0.892523V5.56355C12.3991 5.79907 12.2392 5.95607 11.9993 5.95607C11.7594 5.95607 11.5995 5.75981 11.5995 5.56355V0.892523C11.5995 0.657009 11.7594 0.5 11.9993 0.5Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-            <h3 class="services-card-title">Food Photography</h3>
-            <div class="services-card-content">
-              I do food photography for blogs, restaurants, influencers, YouTube
-              channels — but most importantly (if I manage to cook something
-              that looks good) — I do food photography for myself.
-            </div>
-            <div class="services-card-link">
-              <span>Read more</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="10"
-                viewBox="0 0 20 10"
-                fill="none"
-              >
-                <path
-                  d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="services-card">
-            <div class="services-card-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="24"
-                viewBox="0 0 16 24"
-                fill="none"
-              >
-                <path
-
-d="M15.8776 15.04L11.9198 8.2C11.9198 8.16 11.9198 8.16 11.9198 8.12C11.9198 8.08 11.9606 8.08 12.0014 8.08H12.7358C13.0623 8.08 13.3887 7.88 13.5519 7.6C13.7151 7.32 13.6743 6.96 13.4703 6.68L8.65565 0.36C8.49245 0.12 8.24764 0 7.92122 0C7.59481 0 7.34999 0.12 7.18679 0.36L2.45376 6.68C2.24975 6.96 2.20895 7.32 2.37216 7.6C2.53537 7.88 2.82098 8.08 3.1882 8.08H4.37145C4.41226 8.08 4.41226 8.08 4.45306 8.12C4.45306 8.16 4.45306 8.16 4.45306 8.2L0.128054 15C-0.0351536 15.28 -0.0351532 15.6 0.0872526 15.88C0.25046 16.16 0.536073 16.32 0.862489 16.32H7.554V23.6C7.554 23.84 7.71721 24 7.96202 24C8.20683 24 8.37004 23.84 8.37004 23.6V16.36H15.1024C15.4288 16.36 15.7144 16.2 15.8776 15.92C16.0408 15.64 16.0408 15.32 15.8776 15.04ZM15.1432 15.52C15.1432 15.56 15.1024 15.56 15.0616 15.56H0.821687C0.780885 15.56 0.780885 15.56 0.740083 15.52C0.740083 15.48 0.740083 15.48 0.740083 15.44L5.06509 8.64C5.22829 8.36 5.22829 8.04 5.10589 7.76C4.94268 7.48 4.65707 7.32 4.33065 7.32H3.1474C3.10659 7.32 3.10659 7.32 3.06579 7.28C3.06579 7.24 3.06579 7.24 3.06579 7.2L7.88042 0.84C7.88042 0.8 7.92122 0.8 7.92122 0.8C7.92122 0.8 7.96202 0.8 8.00282 0.84L12.7766 7.16C12.7766 7.2 12.8175 7.2 12.7766 7.24C12.7766 7.28 12.7358 7.28 12.695 7.28H11.9606C11.6342 7.28 11.3486 7.44 11.1854 7.72C11.0222 8 11.0222 8.32 11.1854 8.6L15.1432 15.44C15.184 15.44 15.184 15.48 15.1432 15.52Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
-            <h3 class="services-card-title">Nature Photography</h3>
-            <div class="services-card-content">
-              Landscape photography just never gets old. Someone told me that
-              those are the kinds of pictures you never look. Well, I don't
-              agree.
-            </div>
-            <div class="services-card-link">
-              <span>Read more</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="10"
-                viewBox="0 0 20 10"
-                fill="none"
-              >
-                <path
-                  d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
-                  fill="#3A5F56"
-                />
-              </svg>
-            </div>
+          <div class="services-card-link">
+            <span>Read more</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+              <path
+                d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
+                fill="#3A5F56" />
+            </svg>
           </div>
         </div>
-      </section>
-      <section id="store"></section>
-      <section id="contact"></section>
-    </main>
-    <footer id="presets">
-      <a href="#header">Go to top</a>
-    </footer>
-  </body>
+        <div class="services-card">
+          <div class="services-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M23.7598 0.981583L23.6399 0.621921C23.5999 0.502033 23.48 0.382145 23.36 0.342183L23.0002 0.222295C22.9202 0.182333 21.2809 -0.257255 18.682 0.222295C17.2026 0.502033 15.7232 1.06151 14.2838 1.86076C13.4842 2.30035 12.7245 2.7799 11.9248 3.37933C11.9248 3.37933 11.9248 3.37933 11.8848 3.37933C10.9252 4.09866 9.92565 4.93787 9.00604 5.85701C5.36757 9.4936 3.16849 13.0902 1.92901 15.448C0.569583 18.0456 0.129768 19.8039 0.0897844 19.8839L0.009818 20.5632C-0.0301652 20.763 0.0498012 20.9628 0.2897 21.0428L2.32884 21.7221L3.00856 23.7602C3.04854 23.8801 3.20847 24 3.36841 24C3.40839 24 3.44837 24 3.48836 24L4.0881 23.8402C4.16807 23.8402 5.92733 23.3606 8.52624 22.0019C10.4055 21.0428 13.0044 19.4842 15.8032 17.0865C16.5629 16.4471 17.3225 15.7278 18.1222 14.9685C19.8015 13.29 21.1609 11.5317 22.1205 9.73338C22.9202 8.29473 23.44 6.77615 23.7598 5.3375C24.2796 2.69997 23.7998 1.06151 23.7598 0.981583ZM9.64577 6.45645C10.4055 5.69716 11.2051 5.0178 11.9648 4.3784L15.0835 16.6069C13.0843 18.3253 11.1651 19.5642 9.5658 20.4833L6.80696 9.61349C7.64661 8.57446 8.56622 7.53544 9.64577 6.45645ZM8.16639 21.2825C5.64745 22.6013 3.96816 23.0409 3.88819 23.0409L3.60831 23.1208L3.00856 21.2825C2.96858 21.1627 2.88861 21.0827 2.76866 21.0428L0.889449 20.4034L0.969415 20.1636C0.969415 20.0837 1.44921 18.4052 2.72868 15.8876C3.48836 14.449 4.60789 12.5308 6.16723 10.4527L8.84611 20.9229C8.60621 21.0428 8.36631 21.1627 8.16639 21.2825ZM23.0002 5.13769C22.7203 6.53638 22.2005 7.93506 21.4408 9.29379C20.5212 11.0122 19.2018 12.7306 17.5624 14.369C16.9627 14.9685 16.3629 15.5279 15.8032 16.0475L12.6845 3.89885C13.3642 3.4193 14.0439 2.97971 14.7236 2.62005C16.1231 1.86076 17.5225 1.34125 18.8819 1.06151C20.6811 0.701846 21.9206 0.861696 22.4804 0.981583L20.7211 2.73993C20.5612 2.89978 20.5612 3.13956 20.7211 3.29941C20.8011 3.37933 20.921 3.4193 21.001 3.4193C21.081 3.4193 21.2009 3.37933 21.2809 3.29941L23.0401 1.54106C23.2001 2.06057 23.32 3.33937 23.0002 5.13769Z"
+                fill="#3A5F56" />
+            </svg>
+          </div>
+          <h3 class="services-card-title">volleyball</h3>
+          <div class="services-card-content">
+
+            what can i say about volleyball it is a good sport but not for me i dont like this sport
+            <div class="services-card-link">
+              <span>Read more</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                <path
+                  d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
+                  fill="#3A5F56" />
+              </svg>
+            </div>
+          </div>
+          <div class="services-card">
+            <div class="services-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                <path
+                  d="M5.08 7.21182C6.4 7.21182 7.68 7.76355 8.6 8.66995C9.04 9.10345 9.4 9.61576 9.64 10.1675C10.24 9.73399 11 9.45813 11.84 9.45813C12.8 9.45813 13.64 9.7734 14.28 10.3251C15.04 8.47291 16.88 7.21182 18.96 7.21182C20.32 7.21182 21.56 7.72414 22.52 8.66995C23.48 9.61576 24 10.8374 24 12.1773V13.9901C24 15.0936 23.08 16 21.96 16H2.04C0.92 16 0 15.0936 0 13.9901V12.335C0 10.9557 0.56 9.61576 1.56 8.63054C2.52 7.72414 3.76 7.17241 5.08 7.21182ZM11.84 10.2069C10.2 10.2069 8.88 11.5074 8.88 13.1232V15.2118H14.8V13.1232C14.8 11.5468 13.48 10.2069 11.84 10.2069ZM5.12 7.96059H5.08C4 7.96059 2.96 8.39409 2.16 9.18227C1.28 10.0493 0.8 11.1921 0.8 12.335V13.9901C0.8 14.6601 1.36 15.2118 2.04 15.2118V15.1724H8.12V13.0837C8.12 12.1773 8.48 11.3103 9.04 10.6798C8.84 10.1281 8.52 9.61576 8.08 9.18227C7.28 8.39409 6.24 7.96059 5.12 7.96059ZM18.92 8C17.04 8 15.4 9.18227 14.88 10.9557C15.32 11.5468 15.6 12.2956 15.6 13.1232V15.2118H21.96C22.64 15.2118 23.2 14.6601 23.2 13.9901H23.16V12.1773C23.16 11.0739 22.72 10.0099 21.92 9.22167C21.12 8.4335 20.04 8 18.92 8ZM11.88 3.9803C13.04 3.9803 13.96 4.8867 13.96 6.02956C13.96 7.17241 13.04 8.07882 11.88 8.07882C10.72 8.07882 9.8 7.17241 9.8 6.02956C9.8 4.8867 10.72 3.9803 11.88 3.9803ZM11.88 4.80788C11.16 4.80788 10.6 5.35961 10.6 6.06897C10.6 6.77833 11.16 7.33005 11.88 7.33005C12.6 7.33005 13.16 6.77833 13.16 6.06897C13.16 5.35961 12.6 4.80788 11.88 4.80788ZM5.04 0C6.6 0 7.88 1.26108 7.88 2.79803C7.88 4.33498 6.6 5.59606 5.04 5.59606C3.48 5.59606 2.2 4.33498 2.2 2.79803C2.2 1.26108 3.48 0 5.04 0ZM18.96 0C20.52 0 21.8 1.26108 21.8 2.79803C21.8 4.33498 20.52 5.59606 18.96 5.59606C17.4 5.59606 16.12 4.33498 16.12 2.79803C16.12 1.26108 17.4 0 18.96 0ZM5.04 0.788177C3.92 0.788177 3 1.69458 3 2.79803C3 3.90148 3.92 4.80788 5.04 4.80788C6.16 4.80788 7.08 3.90148 7.08 2.79803C7.08 1.69458 6.16 0.788177 5.04 0.788177ZM18.96 0.788177C17.84 0.788177 16.92 1.69458 16.92 2.79803C16.92 3.90148 17.84 4.80788 18.96 4.80788C20.08 4.80788 21 3.90148 21 2.79803C21 1.69458 20.08 0.788177 18.96 0.788177Z"
+                  fill="#3A5F56" />
+              </svg>
+            </div>
+            <h3 class="services-card-title">tennis</h3>
+            <div class="services-card-content">
+              i love this sport i started to play it only and for my dad he taught me to play tennis i like it now but i
+              play it very rarely
+              <div class="services-card-link">
+                <span>Read more</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                  <path
+                    d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
+                    fill="#3A5F56" />
+                </svg>
+              </div>
+            </div>
+            <div class="services-card">
+              <div class="services-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                  <path ]
+                    d="M12 0.5C18.08 0.5 23.24 4 24 8.60112V8.79775C24 8.83708 23.96 8.83708 23.96 8.8764C23.92 8.8764 23.92 8.91573 23.92 8.95506C23.92 8.95506 23.92 8.99438 23.88 8.99438C23.84 8.99438 23.84 9.03371 23.8 9.03371C23.76 9.07303 23.76 9.07303 23.72 9.07303H20.96V20.7135H21.76C22 20.7135 22.16 20.8708 22.16 21.1067C22.16 21.3427 22 21.5 21.76 21.5H14.96C14.72 21.5 14.56 21.3427 14.56 21.1067C14.56 20.8708 14.72 20.7135 14.96 20.7135H15.92V9.07303H8.2V20.6742H9.08C9.32 20.6742 9.48 20.8315 9.48 21.0674C9.48 21.3034 9.32 21.4607 9.08 21.4607H2.28C2.04 21.4607 1.88 21.3034 1.88 21.0674C1.88 20.8315 2.04 20.6742 2.28 20.6742H3.16V9.03371H0.2C0.16 9.03371 0.12 8.99438 0.12 8.99438L0.10963 8.98419L0.08 8.95506C0.08 8.91573 0.04 8.91573 0.04 8.8764C0 8.83708 0 8.83708 0 8.79775V8.60112C0.76 4 5.92 0.5 12 0.5ZM7.4 9.07303H4V20.7135H7.4V9.07303ZM20.12 9.07303H16.72V20.7135H20.12V9.07303ZM12 1.28652C6.52 1.28652 1.84 4.27528 0.88 8.28652H23.12C22.16 4.27528 17.48 1.28652 12 1.28652ZM14.32 5.10112C14.56 5.10112 14.72 5.25843 14.72 5.49438C14.72 5.73034 14.56 5.88764 14.32 5.88764H9.72C9.48 5.88764 9.32 5.73034 9.32 5.49438C9.32 5.25843 9.48 5.10112 9.72 5.10112H14.32Z"
+                    fill="#3A5F56" />
+                </svg>
+              </div>
+              <h3 class="services-card-title">baseball</h3>
+              <div class="services-card-content">
+                Baseball is a boring sport. I don't understand how people can watch players run in circles and hit a
+                ball.
+              </div>
+              <div class="services-card-link">
+                <span>Read more</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                  <path
+                    d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
+                    fill="#3A5F56" />
+                </svg>
+              </div>
+            </div>
+            <div class="services-card">
+              <div class="services-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M11.636 0C12.2359 0 12.7557 0.48 12.7557 1.12V3.4C12.7557 4.12 12.5158 4.84 12.1159 5.44C12.5158 6.04 12.7557 6.76 12.7557 7.48V9.08C12.7557 9.68 12.2758 10.2 11.636 10.2C9.99653 10.2 8.55696 9.08 8.11709 7.52C7.67722 7.68 7.27734 8 6.87746 8.44C6.59754 8.8 6.51757 9.32 6.7575 9.76C6.99742 10.2 7.3973 10.48 7.91715 10.48C8.15708 10.48 8.31703 10.64 8.31703 10.88C8.31703 11.12 8.15708 11.28 7.91715 11.28C7.11739 11.28 6.3976 10.84 6.03771 10.12C5.67782 9.4 5.79778 8.56 6.27764 7.92C6.95744 7.2 7.59724 6.76 8.35702 6.6C8.47698 6.56 8.59694 6.56 8.67692 6.64C8.7569 6.72 8.83687 6.8 8.83687 6.92C9.03681 8.36 10.2365 9.4 11.676 9.4C11.836 9.4 11.9959 9.24 11.9959 9.08V7.48C11.9959 6.84 11.756 6.2 11.3561 5.72C11.2362 5.56 11.2362 5.36 11.3561 5.2C11.756 4.72 11.9959 4.08 11.9959 3.44V1.12C11.9959 0.96 11.836 0.8 11.676 0.8C10.0765 0.8 8.79689 2.12 8.79689 3.68C8.79689 4.04 8.39701 4.08 8.23705 4.08C6.23765 4.24 4.51817 5 3.11858 6.4C1.07919 8.4 0.319422 11.28 1.03921 14C1.75899 16.8 3.87836 18.92 6.63753 19.64C6.7575 19.68 6.87746 19.76 6.91745 19.88C6.95744 20 6.95744 20.12 6.87746 20.24C6.0777 21.4 5.31793 21.96 4.63813 22.48L4.51817 22.6C4.31823 22.72 4.35821 22.88 4.3982 22.96C4.43819 23.04 4.51817 23.2 4.71811 23.2C7.35732 23.2 9.83657 22.04 11.5161 20.04C11.596 19.92 11.716 19.88 11.836 19.88L13.7154 19.92C18.474 19.92 22.5528 16.4 23.1926 11.64C23.1926 11.52 23.1526 11.44 23.1126 11.4C23.0726 11.36 22.9926 11.28 22.8727 11.28H14.2752C14.0353 11.28 13.8754 11.12 13.8754 10.88C13.8754 10.64 14.0353 10.48 14.2752 10.48H22.8727C23.1926 10.48 23.5125 10.64 23.7124 10.88C23.9124 11.16 24.0323 11.48 23.9923 11.76C23.3125 16.88 18.9139 20.72 13.7554 20.72H12.0359C10.1965 22.8 7.55726 24 4.75809 24C4.23825 24 3.83837 23.72 3.67842 23.24C3.51846 22.8 3.67842 22.28 4.0783 22L4.23825 21.88C4.79808 21.44 5.35791 21.04 5.95774 20.28C3.15857 19.32 1.07919 17.12 0.319422 14.24C-0.520327 11.2 0.319422 8.04 2.55875 5.8C4.03831 4.32 5.87776 3.48 7.99712 3.28C8.15708 1.44 9.7566 0 11.636 0ZM19.3537 12.76C19.9136 12.76 20.3934 13.24 20.3934 13.8C20.3934 14.36 19.9136 14.8 19.3537 14.84C18.7939 14.84 18.314 14.36 18.314 13.8C18.314 13.24 18.7939 12.76 19.3537 12.76Z"
+                    fill="#3A5F56" />
+                </svg>
+              </div>
+              <h3 class="services-card-title">Animal Photography</h3>
+              <div class="services-card-content">
+                I love hockey! It's such an exciting sport to watch. The speed and agility of the players is amazing,
+                and the strategy involved in each play is fascinating. I may not play the sport myself, but I can
+                appreciate the skill and dedication it takes to be a successful hockey player.
+              </div>
+              <div class="services-card-link">
+                <span>Read more</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                  <path
+                    d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
+                    fill="#3A5F56" />
+                </svg>
+              </div>
+            </div>
+            <div class="services-card">
+              <div class="services-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                  <path
+                    d="M22.5933 8.97851C22.9931 8.97851 23.3529 9.13551 23.6327 9.41028C23.9125 9.68505 24.0325 10.0383 23.9925 10.4308C23.7526 13.0607 22.5533 15.5336 20.6344 17.4178C19.9148 18.1636 19.0753 18.7523 18.1958 19.2626V19.6551C18.1958 20.6757 17.3563 21.5 16.3169 21.5H7.68176C6.64235 21.5 5.80283 20.6757 5.80283 19.6551V19.2626C2.52469 17.4178 0.365918 14.1206 0.00612227 10.4308C-0.033855 10.0776 0.126054 9.68505 0.365918 9.41028C0.645759 9.13551 1.00555 8.97851 1.40533 8.97851H22.5933ZM22.2335 13.7673H1.72515C2.6846 15.8084 4.32367 17.5355 6.40249 18.6738C6.52242 18.7523 6.60238 18.8701 6.60238 19.0271V19.6159C6.60238 20.2047 7.08211 20.6757 7.68176 20.6757H16.3169C16.9165 20.6757 17.3962 20.2047 17.3962 19.6159V19.0271C17.3962 18.8701 17.4762 18.7523 17.5961 18.6738C18.5156 18.2028 19.3551 17.5748 20.0747 16.8682C20.9942 15.9654 21.7138 14.9056 22.2335 13.7673ZM22.6333 9.7243H1.40533C1.24542 9.7243 1.08551 9.8028 0.965578 9.92056C0.845646 10.0383 0.805668 10.1953 0.805668 10.3523C0.885623 11.2551 1.08551 12.1579 1.40533 12.9822H22.5933C22.9131 12.1187 23.113 11.2551 23.2329 10.3523C23.2329 10.1953 23.193 10.0383 23.073 9.92056C22.9531 9.8028 22.7932 9.7243 22.6333 9.7243ZM6.08267 0.5C6.32254 0.5 6.48245 0.657009 6.48245 0.892523V5.56355C6.48245 5.79907 6.32254 5.95607 6.08267 5.95607C5.84281 5.95607 5.6829 5.75981 5.6829 5.56355V0.892523C5.6829 0.657009 5.84281 0.5 6.08267 0.5ZM17.916 0.5C18.1558 0.5 18.3157 0.657009 18.3157 0.892523V5.56355C18.3157 5.79907 18.1558 5.95607 17.916 5.95607C17.7161 5.95607 17.5162 5.75981 17.5162 5.56355V0.892523C17.5162 0.657009 17.6761 0.5 17.916 0.5ZM11.9993 0.5C12.2392 0.5 12.3991 0.657009 12.3991 0.892523V5.56355C12.3991 5.79907 12.2392 5.95607 11.9993 5.95607C11.7594 5.95607 11.5995 5.75981 11.5995 5.56355V0.892523C11.5995 0.657009 11.7594 0.5 11.9993 0.5Z"
+                    fill="#3A5F56" />
+                </svg>
+              </div>
+              <h3 class="services-card-title">american football</h3>
+              <div class="services-card-content">
+                I'm not a fan of American football. It just doesn't appeal to me. I understand that it takes a lot of
+                physical strength and endurance to play, but the stop-and-start nature of the game bores me. I prefer
+                sports that have a more continuous flow, like basketball or soccer. However, I can see why others enjoy
+                it and respect the athleticism of the players.
+              </div>
+              <div class="services-card-link">
+                <span>Read more</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                  <path
+                    d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
+                    fill="#3A5F56" />
+                </svg>
+              </div>
+            </div>
+            <div class="services-card">
+              <div class="services-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24" fill="none">
+                  <path
+                    d="M15.8776 15.04L11.9198 8.2C11.9198 8.16 11.9198 8.16 11.9198 8.12C11.9198 8.08 11.9606 8.08 12.0014 8.08H12.7358C13.0623 8.08 13.3887 7.88 13.5519 7.6C13.7151 7.32 13.6743 6.96 13.4703 6.68L8.65565 0.36C8.49245 0.12 8.24764 0 7.92122 0C7.59481 0 7.34999 0.12 7.18679 0.36L2.45376 6.68C2.24975 6.96 2.20895 7.32 2.37216 7.6C2.53537 7.88 2.82098 8.08 3.1882 8.08H4.37145C4.41226 8.08 4.41226 8.08 4.45306 8.12C4.45306 8.16 4.45306 8.16 4.45306 8.2L0.128054 15C-0.0351536 15.28 -0.0351532 15.6 0.0872526 15.88C0.25046 16.16 0.536073 16.32 0.862489 16.32H7.554V23.6C7.554 23.84 7.71721 24 7.96202 24C8.20683 24 8.37004 23.84 8.37004 23.6V16.36H15.1024C15.4288 16.36 15.7144 16.2 15.8776 15.92C16.0408 15.64 16.0408 15.32 15.8776 15.04ZM15.1432 15.52C15.1432 15.56 15.1024 15.56 15.0616 15.56H0.821687C0.780885 15.56 0.780885 15.56 0.740083 15.52C0.740083 15.48 0.740083 15.48 0.740083 15.44L5.06509 8.64C5.22829 8.36 5.22829 8.04 5.10589 7.76C4.94268 7.48 4.65707 7.32 4.33065 7.32H3.1474C3.10659 7.32 3.10659 7.32 3.06579 7.28C3.06579 7.24 3.06579 7.24 3.06579 7.2L7.88042 0.84C7.88042 0.8 7.92122 0.8 7.92122 0.8C7.92122 0.8 7.96202 0.8 8.00282 0.84L12.7766 7.16C12.7766 7.2 12.8175 7.2 12.7766 7.24C12.7766 7.28 12.7358 7.28 12.695 7.28H11.9606C11.6342 7.28 11.3486 7.44 11.1854 7.72C11.0222 8 11.0222 8.32 11.1854 8.6L15.1432 15.44C15.184 15.44 15.184 15.48 15.1432 15.52Z"
+                    fill="#3A5F56" />
+                </svg>
+              </div>
+              <h3 class="services-card-title">golf</h3>
+              <div class="services-card-content">
+                I love golf, but I do think it's a sport that is primarily for the wealthy. The cost of equipment,
+                greens fees, and memberships can be prohibitively expensive for many people. Nonetheless, I find the
+                precision and strategy of the game to be incredibly satisfying.
+              </div>
+              <div class="services-card-link">
+                <span>Read more</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                  <path
+                    d="M18.6798 3.77312L15.2029 0.341984C14.7257 -0.102793 13.9758 -0.102793 13.4986 0.278444C13.0213 0.723221 13.0213 1.42216 13.4304 1.86693L15.4075 3.83666H1.22714C0.545397 3.83666 0 4.34498 0 4.98037C0 5.61577 0.545397 6.12409 1.22714 6.12409H15.4756L13.4986 8.09381C13.0213 8.53859 13.0895 9.23752 13.5667 9.6823C13.7713 9.87292 14.1121 10 14.3848 10C14.7257 10 14.9984 9.87292 15.2711 9.6823L18.748 6.25116C19.3616 5.48869 19.3616 4.47206 18.6798 3.77312Z"
+                    fill="#3A5F56" />
+                </svg>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="store"></section>
+    <section id="contact"></section>
+  </main>
+  <footer id="presets">
+    <a href="#header">Go to top</a>
+  </footer>
+</body>
+
 </html>
